@@ -8,7 +8,6 @@
 
     <ItemGroup>
       <Folder Include="Models\Dtos\" />
-      <Folder Include="Models\Entities\" />
       <Folder Include="Repositories\" />
       <Folder Include="Services\" />
     </ItemGroup>
