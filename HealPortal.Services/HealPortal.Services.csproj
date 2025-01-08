@@ -10,4 +10,9 @@
       <Folder Include="Serives\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\HealPortal.Domain\HealPortal.Domain.csproj" />
+      <ProjectReference Include="..\HealPortal.Infrastructure\HealPortal.Infrastructure.csproj" />
+    </ItemGroup>
+
 </Project>
