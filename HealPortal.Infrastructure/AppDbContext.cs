@@ -32,6 +32,10 @@ public class AppDbContext : DbContext
                 .HasMany(e => e.Comments)
                 .WithOne(e => e.User)
                 .HasForeignKey(e => e.UserId);
+            builder
+                .HasMany(e => e.Posts)
+                .WithOne(e => e.User)
+                .HasForeignKey(e => e.UserId);
         });
         modelBuilder.Entity<CommentEntity>(builder =>
         {
@@ -71,6 +75,10 @@ public class AppDbContext : DbContext
             builder
                 .HasMany(e => e.Tags)
                 .WithMany(e => e.Posts);
+            builder
+                .HasOne(e => e.User)
+                .WithMany(e => e.Posts)
+                .HasForeignKey(e => e.UserId);
         });
         modelBuilder.Entity<TagEntity>(builder =>
         {

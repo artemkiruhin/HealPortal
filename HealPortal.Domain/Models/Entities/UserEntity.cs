@@ -8,6 +8,7 @@ public class UserEntity
     public required string Username { get; set; }
     public required string PasswordHash { get; set; }
     public virtual ICollection<CommentEntity>? Comments { get; protected set; }
+    public virtual ICollection<PostEntity>? Posts { get; protected set; }
     public string? Img { get; set; }
     public required string Role { get; set; }
     public DateTime RegisteredAt { get; protected set; }
