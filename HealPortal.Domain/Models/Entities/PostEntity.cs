@@ -9,6 +9,8 @@ public class PostEntity
     public required string Content { get; set; }
     public virtual ICollection<TagEntity>? Tags { get; protected set; }
     public virtual ICollection<CommentEntity>? Comments { get; protected set; }
+    public virtual UserEntity User { get; protected set; }
+    public Guid UserId { get; set; }
     public uint Likes { get; set; }
     public uint Dislikes { get; set; }
     public uint Watchers { get; set; }
