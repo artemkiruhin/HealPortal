@@ -8,5 +8,5 @@ namespace HealPortal.Services.Serives.Hasher;
 public class Sha256Hasher : IHashService
 {
     public string Hash(string message)
-        => Convert.ToBase64String(SHA256.HashData(Encoding.UTF8.GetBytes(message)));
+        => Convert.ToHexStringLower(SHA256.HashData(Encoding.UTF8.GetBytes(message)));
 }
