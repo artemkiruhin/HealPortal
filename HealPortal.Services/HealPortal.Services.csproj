@@ -11,4 +11,8 @@
       <ProjectReference Include="..\HealPortal.Infrastructure\HealPortal.Infrastructure.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.3.0" />
+    </ItemGroup>
+
 </Project>
